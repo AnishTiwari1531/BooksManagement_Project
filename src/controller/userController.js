@@ -50,7 +50,7 @@ const registerUser = async function (req, res) {
             return res.status(400).send({ status: false, message: "Please provide Email id 🛑" });;
         }
         if (!validate.isValidSyntaxOfEmail(email)) {
-            return res.status(404).send({ status: false, message: "Please provide a valid Email Id 🛑" });
+            return res.status(400).send({ status: false, message: "Please provide a valid Email Id 🛑" });
         }
 
         if (email) {

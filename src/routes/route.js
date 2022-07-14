@@ -6,7 +6,6 @@ const reviewController = require("../controller/reviewController")
 const middleware = require("../middleware/auth")
 
 
-
 //----------------------------USER-------------------------------------//
 
 router.post("/register", userController.registerUser)
